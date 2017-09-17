@@ -250,6 +250,33 @@ html, body {
 		text-align:center;
 	}
 
+	/*Other buttons*/
+	#close, #settings, #preview, #publish {
+		width:2em;
+		height:25vh;
+		background-color:#f0f0f0;
+		box-shadow:inset 0 0 0 2px #e8e8e8;
+		position:absolute;
+		z-index:1000000;
+		right:0px;
+	}
+
+	#close {
+		top:0px;
+	}
+
+	#settings {
+		top:25vw;
+	}
+
+	#preview {
+		top:50vw;
+	}
+
+	#publish {
+		top:75vw;
+	}
+
 }
 
 @media only screen and (max-width:768px) and (min-width:426px) and (orientation:portrait) {
