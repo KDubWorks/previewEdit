@@ -185,8 +185,125 @@ html, body {
 
 }
 
+@media only screen and (orientation:landscape) and (max-width:768px) {
+
+	/*Editor section and tools*/
+	#editTools {
+		display:none;
+	}
+
+}
+
+@media only screen and (max-width:768px) and (min-width:426px) and (orientation:portrait) {
+
+	/*Editor section and tools*/
+	#editTools {
+		display:none;
+	}
+
+	/*Editor section*/
+	#editorExt {
+		width:70vw;
+		height:90vh;
+		overflow:hidden;
+		background-color:#f8f8f8;
+		position:absolute;
+		left:0vw;
+		top:5vh;
+	}
+
+	#editor {
+		width:100%;
+		height:100%;
+		overflow-x:hidden;
+		overflow-y:scroll;
+	}
+
+	#editorScroll {
+		width:100%;
+		height:auto;
+	}
+
+	.editorSection {
+		width:100%;
+		height:4em;
+		background-color:#f0f0f0;
+		overflow:hidden;
+	}
+
+	.editTitle {
+		width:100%;
+		height:4em;
+		background-color:#f0f0f0;
+		position:relative;
+		overflow:hidden;
+	}
+
+	.editTitle {
+		width:100%;
+		height:4em;
+		overflow:hidden;
+		position:relative;
+		text-align:center;
+		box-shadow:inset 0 0 0 2px #e8e8e8;
+	}
+
+	.editTitle > h1 {
+		font-size:16px;
+		margin-top:1.45em;
+		color:#303030;
+	}
+
+}
+
 @media only screen and (max-width:425px) and (orientation:portrait) {
 
-	
-	
+	/*Editor section and tools*/
+	#editTools {
+		display:none;
+	}
+
+	/*Editor Section*/
+	#editorExt {
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		background-color:#f8f8f8;
+	}
+
+	#editor {
+		width:100%;
+		height:100%;
+		overflow-x:hidden;
+		overflow-y:scroll;
+	}
+
+	#editorScroll {
+		width:100%;
+		height:auto;
+		box-shadow:inset 0 0 0 2px #e8e8e8;
+	}
+
+	.editorSection {
+		width:100%;
+		height:4em;
+		overflow:hidden;
+		background-color:#f0f0f0;
+	}
+
+	.editTitle {
+		width:100%;
+		height:4em;
+		overflow:hidden;
+		position:relative;
+		text-align:center;
+		box-shadow:inset 0 0 0 2px #e8e8e8;
+	}
+
+	.editTitle > h1 {
+		font-size:16px;
+		margin-top:1.45em;
+		color:#303030;
+	}
+
 }
