@@ -75,6 +75,16 @@ for(var i = 0; i < editTitle.length; i++) {
 
 		if(n == 0) {
 			document.getElementById("background-image-edit").style.left = "0vw";
+		} else if(n == 1) {
+			document.getElementById("icon-image-edit").style.left = "0vw";
+		} else if(n == 2) {
+			document.getElementById("title-edit").style.left = "0vw";
+		} else if(n == 3) {
+			document.getElementById("date-edit").style.left = "0vw";
+		} else if(n == 4) {
+			document.getElementById("button-edit").style.left = "0vw";
+		} else if(n == 5) {
+			document.getElementById("box-shadow-edit").style.left = "0vw";
 		}
 
 	});

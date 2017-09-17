@@ -13,8 +13,144 @@ html, body {
 
 @media only screen and (min-width:769px) {
 
-	/*close and settings button*/
+	/*editor-text*/
+	#editor-ext {
+		height:100vh;
+		width:28em;
+		background-color:#dcdcdc;
+		position:absolute;
+		top:0px;
+		left:0px;
+		overflow:hidden;
+	}
 
+	#editor {
+		width:100%;
+		height:100%;
+		overflow-y:scroll;
+		overflow-x:hidden;
+
+	}
+
+	#in-edit {
+		width:28em;
+		height:auto;
+		box-shadow:inset 0 0 0 2px #a9a9a9;
+	}
+
+	.editor-blocks {
+		width:28em;
+		height:4.5em;
+		overflow:hidden;
+	}
+
+	.editor-title {
+		width:28em;
+		height:4.5em;
+		overflow:hidden;
+		position:relative;
+		box-shadow:inset 0 0 0 2px #a9a9a9;
+		background-color:#c8c8c8;
+	}
+
+	.editor-title:hover {
+		background-color:#a9a9a9;
+	}
+
+	.open {
+		width:1.5em;
+		height:1.5em;
+		background-color:#484848;
+		border-radius:50%;
+		position:absolute;
+		top:1.45em;
+		right:3em;
+	}
+
+	.learn-more {
+		width:1.5em;
+		height:1.5em;
+		background-color:#484848;
+		border-radius:50%;
+		position:absolute;
+		top:1.45em;
+		right:1em;
+	}
+
+	.edit-title {
+		text-transform:uppercase;
+		margin-top:0px;
+		position:absolute;
+		top:1.4em;
+		left:1em;
+		color:#484848;
+	}
+
+	.editor-desc {
+		width:28em;
+		height:auto;
+		overflow:hidden;
+		text-align:center;
+		background-color:#f3f3f3;
+	}
+
+	.desc {
+		width:70%;
+		margin:auto;
+		margin-top:1em;
+		margin-bottom:1em;
+	}
+
+	/*These are the editing tools*/
+	#background-image-edit, #icon-image-edit,
+	#title-edit, #date-edit, 
+	#button-edit, #shadow-box-edit {
+		display:none;
+	}
+
+	/*button save publish*/
+	#sp-button {
+		width:28em;
+		height:3.25em;
+		position:absolute;
+		left:0px;
+		bottom:0px;
+		box-shadow:inset 0 0 0 2px #a9a9a9;
+	}
+
+	#save {
+		height:3.25em;
+		width:14em;
+		background-color:#c8c8c8;
+		float:left;
+		overflow:hidden;
+		text-align:center;
+		box-shadow:inset 0 0 0 2px #a9a9a9;
+		float:left;
+	}
+
+	#publish {
+		height:3.25em;
+		width:14em;
+		background-color:#c8c8c8;
+		float:left;
+		overflow:hidden;
+		text-align:center;
+		box-shadow:inset 0 0 0 2px #a9a9a9;
+		float:left;
+	}
+
+	#publish:hover, #save:hover {
+		background-color:#a9a9a9;
+	}
+
+}
+
+/*This is the code that reacts to screen size*/
+/*@media only screen and (min-width:769px) {*/
+
+	/*close and settings button*/
+	/*
 	#close {
 		width:6vh;
 		height:6vh;
@@ -33,10 +169,10 @@ html, body {
 		top:8vh;
 		left:40vw;
 		background-color:#e0e0e0;
-	}
+	}*/
 
 	/*Editor Section*/
-
+	/*
 	#editor-ext {
 		height:100vh;
 		width:40vw;
@@ -124,9 +260,10 @@ html, body {
 		width:70%;
 		margin:3vh auto;
 		color:#484848;
-	}
+	}*/
 
 	/*Edit Sections and Tools*/
+	/*
 	#background-image-edit, #icon-image-edit,
 	#title-edit, #date-edit, 
 	#button-edit, #shadow-box-edit {
@@ -166,37 +303,82 @@ html, body {
 		height:auto;
 		margin-top:3vh;
 		margin-bottom:9vh;
+		text-align:center;
 	}
+
+	.sec-t {
+		text-transform:uppercase;
+		font-size:2.25vh;
+		margin-top:3vh;
+	}
+
+	#back-img-preview {
+		width:90%;
+		height:40vh;
+		background-image:url("../img/hotel.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center center;	
+		margin:2vh auto;
+	}
+
+	#back-img-count {
+		width:90%;
+		height:10vh;
+		margin:auto;
+		margin-top:3vh;
+	}
+
+	#back-img-sel {
+		width:90%;
+		height:40vh;
+		margin:auto;
+		margin-top:3vh;
+	}
+
+	#back-img-sha {
+		width:90%;
+		height:10vh;
+		margin:3vh auto;
+	}
+
+	#back-img-ani {
+		width:90%;
+		height:20vh;
+		margin:3vh auto;
+	}*/
 
 	/*Save Button*/
 
-	#sp-button {
+	/*#sp-button {
 		height:9vh;
 		width:40vw;
-		background-color:#484848;
 		position:absolute;
 		z-index:1000;
 		bottom:0px;
 		left:0px;
 		position:fixed;
+		box-shadow:inset 0 0 0 2px #c0c0c0;
 	}
 
 	#save {
 		width:20vw;
-		height:9vh;
-		box-shadow:inset 0 0 0 2px #f3f3f3;
+		height:9vh;	
 		text-align:center;
 		overflow:hidden;
 		float:left;
+		background-color:#e0e0e0;
+		box-shadow:inset 0 0 0 2px #c0c0c0;
 	}
 
 	#publish {
 		width:20vw;
 		height:9vh;
-		box-shadow:inset 0 0 0 2px #f3f3f3;
 		text-align:center;
 		overflow:hidden;
 		float:left;
-	}
+		background-color:#e0e0e0;
+		box-shadow:inset 0 0 0 2px #c0c0c0;
+	}*/
 
-}
+/*}*/
