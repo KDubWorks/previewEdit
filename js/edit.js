@@ -60,18 +60,18 @@ for(var i = 0; i < learnMore.length; i++) {
 
 }
 
-var editTitle = document.querySelectorAll(".edit-title");
-var eTa = new Array();
+var open = document.querySelectorAll(".open");
+var oA = new Array();
 
-for(var i = 0; i < editTitle.length; i++) {
-	eTa[i] = editTitle[i];
+for(var i = 0; i < open.length; i++) {
+	oA[i] = open[i];
 }
 
-for(var i = 0; i < editTitle.length; i++) {
+for(var i = 0; i < open.length; i++) {
 
-	editTitle[i].addEventListener("click", function() {
+	open[i].addEventListener("click", function() {
 
-		var n = eTa.indexOf(this);
+		var n = oA.indexOf(this);
 
 		if(n == 0) {
 			document.getElementById("background-image-edit").style.left = "0vw";
