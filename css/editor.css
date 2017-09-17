@@ -158,10 +158,6 @@ html, body {
 
 @media only screen and (max-width:425px) and (orientation:portrait) {
 
-	html, body {
-		background-color:#000;
-	}
-
 	/*editor-text*/
 	#editor-ext {
 		width:90vw;
