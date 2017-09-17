@@ -392,3 +392,114 @@ html, body {
 	}*/
 
 /*}*/
+
+@media only screen and (orientation:portrait) and (max-width:425px) {
+
+	/*editor-text*/
+	#editor-ext {
+		width:90vw;
+		height:85vh;
+		overflow:hidden;
+		position:absolute;
+		z-index:1000;
+		left:5vw;
+		bottom:5vh;
+		background-color:#dcdcdc;
+	}
+
+	#editor {
+		width:100%;
+		height:100%;
+		overflow-x:hidden;
+		overflow-y:scroll;
+	}
+
+	#in-edit {
+		width:100%;
+		height:auto;
+		box-shadow:inset 0 0 0 2px #a9a9a9;
+	}
+
+	.editor-blocks {
+		width:100%;
+		height:4.5em;
+		overflow:hidden;
+	}
+
+	.editor-title {
+		width:100%;
+		height:4.5em;
+		overflow:hidden;
+		position:relative;
+		box-shadow:inset 0 0 0 2px #a9a9a9;
+		background-color:#c8c8c8;
+	}
+
+	.editor-title:hover {
+		background-color:#a9a9a9;
+	}
+
+	.edit-title {
+		cursor:default;
+		text-align:center;
+		text-transform:uppercase;
+		color:#484848;
+		margin-top:1.5em;
+	}	
+
+	.editor-desc {
+		width:28em;
+		height:auto;
+		overflow:hidden;
+		text-align:center;
+		background-color:#f3f3f3;
+	}
+
+	.desc {
+		width:70%;
+		margin:auto;
+		margin-top:1em;
+		margin-bottom:1em;
+	}
+
+	/*These are the editing tools*/
+	#background-image-edit, #icon-image-edit,
+	#title-edit, #date-edit, 
+	#button-edit, #shadow-box-edit {
+		display:none;
+	}
+
+	/*Save publish button*/
+	#sp-button {
+		width:100%;
+		height:3.25em;
+		position:absolute;
+		z-index:1000;
+		bottom:0px;
+		left:0px;
+		box-shadow:inset 0 0 0 2px #a9a9a9;
+	}
+
+	#save {
+		height:3.25em;
+		width:50%;
+		background-color:#c8c8c8;
+		float:left;
+		overflow:hidden;
+		text-align:center;
+		box-shadow:inset 0 0 0 2px #a9a9a9;
+		float:left;
+	}
+
+	#publish {
+		height:3.25em;
+		width:50%;
+		background-color:#c8c8c8;
+		float:left;
+		overflow:hidden;
+		text-align:center;
+		box-shadow:inset 0 0 0 2px #a9a9a9;
+		float:left;
+	}
+
+}
