@@ -1,90 +1,48 @@
-var learnMore = document.querySelectorAll(".learn-more");
-var lMa = new Array();
-var editBlock = document.querySelectorAll(".editor-blocks");
+var win = $(window).width();
+//edit title array
+var editT = $(".editTitle");
+var editTA = new Array();
+var editTilSec = $(".editorSection");
 
-for(var i = 0; i < learnMore.length; i++) {
-	lMa[i] = learnMore[i];
+//edit sections
+var editSec = $(".editSec");
+var editSA = new Array();
+
+for(var i = 0; i < editT.length; i++) {
+	editTA[i] = editT[i];
+	editSA[i] = editSec[i];
 }
 
-for(var i = 0; i < learnMore.length; i++) {
+if(win >= 769 && win <= 1440) {
 
-	learnMore[i].addEventListener("click", function() {
+	$(".editTitle").click(function() {
 
-		var n = lMa.indexOf(this);
+		var n = editTA.indexOf(this);
 
 		if(n == 0) {
-			editBlock[n].style.height = "auto";
-			editBlock[1].style.height = "10vh";
-			editBlock[2].style.height = "10vh";
-			editBlock[3].style.height = "10vh";
-			editBlock[4].style.height = "10vh";
-			editBlock[5].style.height = "10vh";
+			$(editTilSec[n]).css("height", "auto");
+			$("#editTools").css("left", "0px");
+			$(editSec[n]).css("display", "block");
 		} else if(n == 1) {
-			editBlock[n].style.height = "auto";
-			editBlock[0].style.height = "10vh";
-			editBlock[2].style.height = "10vh";
-			editBlock[3].style.height = "10vh";
-			editBlock[4].style.height = "10vh";
-			editBlock[5].style.height = "10vh";
+			$(editTilSec[n]).css("height", "auto");
+			$("#editTools").css("left", "0px");
+			$(editSec[n]).css("display", "block");
 		} else if(n == 2) {
-			editBlock[n].style.height = "auto";
-			editBlock[0].style.height = "10vh";
-			editBlock[1].style.height = "10vh";
-			editBlock[3].style.height = "10vh";
-			editBlock[4].style.height = "10vh";
-			editBlock[5].style.height = "10vh";
+			$(editTilSec[n]).css("height", "auto");
+			$("#editTools").css("left", "0px");
+			$(editSec[n]).css("display", "block");
 		} else if(n == 3) {
-			editBlock[n].style.height = "auto";
-			editBlock[0].style.height = "10vh";
-			editBlock[1].style.height = "10vh";
-			editBlock[2].style.height = "10vh";
-			editBlock[4].style.height = "10vh";
-			editBlock[5].style.height = "10vh";
+			$(editTilSec[n]).css("height", "auto");
+			$("#editTools").css("left", "0px");
+			$(editSec[n]).css("display", "block");
 		} else if(n == 4) {
-			editBlock[n].style.height = "auto";
-			editBlock[0].style.height = "10vh";
-			editBlock[1].style.height = "10vh";
-			editBlock[2].style.height = "10vh";
-			editBlock[3].style.height = "10vh";
-			editBlock[5].style.height = "10vh";
+			$(editTilSec[n]).css("height", "auto");
+			$("#editTools").css("left", "0px");
+			$(editSec[n]).css("display", "block");
 		} else if(n == 5) {
-			editBlock[n].style.height = "auto";
-			editBlock[0].style.height = "10vh";
-			editBlock[1].style.height = "10vh";
-			editBlock[2].style.height = "10vh";
-			editBlock[3].style.height = "10vh";
-			editBlock[4].style.height = "10vh";
-		}
-
-	});
-
-}
-
-var open = document.querySelectorAll(".open");
-var oA = new Array();
-
-for(var i = 0; i < open.length; i++) {
-	oA[i] = open[i];
-}
-
-for(var i = 0; i < open.length; i++) {
-
-	open[i].addEventListener("click", function() {
-
-		var n = oA.indexOf(this);
-
-		if(n == 0) {
-			document.getElementById("background-image-edit").style.left = "0vw";
-		} else if(n == 1) {
-			document.getElementById("icon-image-edit").style.left = "0vw";
-		} else if(n == 2) {
-			document.getElementById("title-edit").style.left = "0vw";
-		} else if(n == 3) {
-			document.getElementById("date-edit").style.left = "0vw";
-		} else if(n == 4) {
-			document.getElementById("button-edit").style.left = "0vw";
-		} else if(n == 5) {
-			document.getElementById("box-shadow-edit").style.left = "0vw";
+			$(editTilSec[n]).css("height", "auto");
+			$("#editTools").css("left", "0px");
+			$(editSec[n]).css("display", "block");
 		}
 
 	});

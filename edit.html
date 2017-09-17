@@ -6,276 +6,238 @@
 		<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<title>Editor</title>
 		<link rel="stylesheet" type="text/css" href="css/editor.css">
+		<script src="js/jquery-3.2.1.min.js"></script>
 
 	</head>
 
 	<body>
 		
-		<div id="close"></div>
+		<div id="editorExt">
 
-		<div id="settings"></div>
-
-		<div id="editor-ext">
-
-			<!--Section editor-->
-
-			<div id="background-image-edit">
-				
-				<div class="section-title">
+			<div id="editTools">
+			
+				<div class="editSec">
 					
-					<h3 class="sec-title">Background Image Edit</h3>
+					<h3 class="editTitleSecTool">Background Preview</h3>
+
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+					<div id="background-preview"></div>
+
+					<h3 class="editTitleSecTool">Backgrond Count</h3>
+
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+					<div id="background-count"></div>
+
+					<h3 class="editTitleSecTool">Backgrond Selection</h3>
+
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+					<div id="background-selection"></div>
+
+					<h3 class="editTitleSecTool">Backgrond Animation</h3>
+
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+					<div id="background-animation"></div>
 
 				</div>
 
-				<div class="in-section">
+				<div class="editSec">
 					
-					<div class="section">
-						
-						<h3 class="sec-t">Background Image (Preview)</h3>
 
-						<div id="back-img-preview"></div>
 
-						<h3 class="sec-t">Background Image Count</h3>
+				</div>
 
-						<div id="back-img-count"></div>
+				<div class="editSec">
+					
+					<h3 class="editTitleSecTool">Title Preview</h3>
 
-						<h3 class="sec-t">Background Image Selector</h3>
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-						<div id="back-img-sel"></div>
+					<h3 id="title-preview">Icon Convention</h3>
 
-						<h3 class="sec-t">Background Image Shadow</h3>
+					<h3 class="editTitleSecTool">Title Edit</h3>
 
-						<div id="back-img-sha"></div>
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-						<!--this will only appear with more image-->
+					<input type="text" name="input-edit" id="title-input-edit" placeholder="Icon Convention"/>
 
-						<h3 class="sec-t">Backgroud Image Animation</h3>
+					<button id="preview">preview</button>
 
-						<div id="back-img-ani"></div>
+					<h3 class="editTitleSecTool">Title Size</h3>
 
-					</div>
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+					<h3 class="editTitleSecTool">Font Family</h3>
+
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+					<h3 class="editTitleSecTool">Text Color</h3>
+
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+				</div>
+
+				<div class="editSec"></div>
+
+				<div class="editSec">
+					
+					<h3 class="editTitleSecTool">Button Preview</h3>
+
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+					<h3 class="editTitleSecTool">Button Text</h3>
+
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+					<h3 class="editTitleSecTool">Button Color</h3>
+
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+					<h3 class="editTitleSecTool">Border Color</h3>
+
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+					<h3 class="editTitleSecTool">Link</h3>
+
+					<p class="secToolDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+				</div>
+
+				<div class="editSec">
+				
 
 				</div>
 
 			</div>
-
-			<div id="icon-image-edit">
-				
-				<div class="section-title">
-					
-					<h3 class="sec-title">Image Icon Edit</h3>
-
-				</div>
-
-				<div class="in-section">
-					
-					<div class="section"></div>
-
-				</div>
-
-			</div>
-
-			<div id="title-edit">
-				
-				<div class="section-title">
-					
-					<h3 class="sec-title">Title Edit</h3>
-
-				</div>
-
-				<div class="in-section">
-					
-					<div class="section"></div>
-
-				</div>
-
-			</div>
-
-			<div id="date-edit">
-				
-				<div class="section-title">
-					
-					<h3 class="sec-title">Date Edit</h3>
-
-				</div>
-
-				<div class="in-section">
-					
-					<div class="section"></div>
-
-				</div>
-
-			</div>
-
-			<div id="button-edit">
-				
-				<div class="section-title">
-					
-					<h3 class="sec-title">Button Edit</h3>
-
-				</div>
-
-				<div class="in-section">
-					
-					<div class="section"></div>
-
-				</div>
-
-			</div>
-
-			<div id="shadow-box-edit">
-				
-				<div class="section-title">
-					
-					<h3 class="sec-title">Box Shadow Edit</h3>
-
-				</div>
-
-				<div class="in-section">
-					
-					<div class="section"></div>
-
-				</div>
-
-			</div>
-
-			<!--This is the editor-->
-
+			
 			<div id="editor">
 				
-				<div id="in-edit">
+				<div id="editorScroll">
 					
-					<div class="editor-blocks">
+					<div class="editorSection">
 						
-						<div class="editor-title">
+						<div class="editTitleSec">
 							
-							<h3 class="edit-title">Background Image</h3>
+							<div class="editTitle">
+								
+								<h1>Background Image</h1>
 
-							<div class="open"></div>
-
-							<div class="learn-more"></div>
+							</div>
 
 						</div>
 
-						<div class="editor-desc">
+						<div class="editDescPara">
 							
-							<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum ligula vulputate, maximus dui in, pulvinar quam. Pellentesque quis dapibus dolor. Pellentesque diam mauris, semper vel urna quis, efficitur vehicula ex. Sed posuere, felis quis ornare pulvinar, mi lectus mattis odio, vitae ultrices nisl erat non nibh.</p>
+							<p class="editPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus diam sed blandit cursus. Cras at risus nisl. Mauris odio lectus, tristique ac sem in, accumsan rutrum lorem. Nullam convallis hendrerit neque, dapibus dignissim purus mattis in. Sed id nulla suscipit, viverra tellus id, varius augue</p>
 
 						</div>
 
 					</div>
 
-					<div class="editor-blocks">
+					<div class="editorSection">
 						
-						<div class="editor-title">
+						<div class="editTitleSec">
 							
-							<h3 class="edit-title">Icon Image</h3>
+							<div class="editTitle">
+								
+								<h1>Icon Image</h1>
 
-							<div class="open"></div>
-
-							<div class="learn-more"></div>
+							</div>
 
 						</div>
 
-						<div class="editor-desc">
+						<div class="editDescPara">
 							
-							<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum ligula vulputate, maximus dui in, pulvinar quam. Pellentesque quis dapibus dolor. Pellentesque diam mauris, semper vel urna quis, efficitur vehicula ex. Sed posuere, felis quis ornare pulvinar, mi lectus mattis odio, vitae ultrices nisl erat non nibh.</p>
+							<p class="editPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus diam sed blandit cursus. Cras at risus nisl. Mauris odio lectus, tristique ac sem in, accumsan rutrum lorem. Nullam convallis hendrerit neque, dapibus dignissim purus mattis in. Sed id nulla suscipit, viverra tellus id, varius augue</p>
 
 						</div>
 
 					</div>
 
-					<div class="editor-blocks">
+					<div class="editorSection">
 						
-						<div class="editor-title">
+						<div class="editTitleSec">
 							
-							<h3 class="edit-title">Title</h3>
+							<div class="editTitle">
+								
+								<h1>Title</h1>
 
-							<div class="open"></div>
-
-							<div class="learn-more"></div>
+							</div>
 
 						</div>
 
-						<div class="editor-desc">
+						<div class="editDescPara">
 							
-							<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum ligula vulputate, maximus dui in, pulvinar quam. Pellentesque quis dapibus dolor. Pellentesque diam mauris, semper vel urna quis, efficitur vehicula ex. Sed posuere, felis quis ornare pulvinar, mi lectus mattis odio, vitae ultrices nisl erat non nibh.</p>
+							<p class="editPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus diam sed blandit cursus. Cras at risus nisl. Mauris odio lectus, tristique ac sem in, accumsan rutrum lorem. Nullam convallis hendrerit neque, dapibus dignissim purus mattis in. Sed id nulla suscipit, viverra tellus id, varius augue</p>
 
 						</div>
 
 					</div>
 
-					<div class="editor-blocks">
+					<div class="editorSection">
 						
-						<div class="editor-title">
+						<div class="editTitleSec">
 							
-							<h3 class="edit-title">Date</h3>
+							<div class="editTitle">
+								
+								<h1>Date</h1>
 
-							<div class="open"></div>
-
-							<div class="learn-more"></div>
+							</div>
 
 						</div>
 
-						<div class="editor-desc">
+						<div class="editDescPara">
 							
-							<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum ligula vulputate, maximus dui in, pulvinar quam. Pellentesque quis dapibus dolor. Pellentesque diam mauris, semper vel urna quis, efficitur vehicula ex. Sed posuere, felis quis ornare pulvinar, mi lectus mattis odio, vitae ultrices nisl erat non nibh.</p>
+							<p class="editPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus diam sed blandit cursus. Cras at risus nisl. Mauris odio lectus, tristique ac sem in, accumsan rutrum lorem. Nullam convallis hendrerit neque, dapibus dignissim purus mattis in. Sed id nulla suscipit, viverra tellus id, varius augue</p>
 
 						</div>
 
 					</div>
 
-					<div class="editor-blocks">
+					<div class="editorSection">
 						
-						<div class="editor-title">
+						<div class="editTitleSec">
 							
-							<h3 class="edit-title">Button</h3>
+							<div class="editTitle">
+								
+								<h1>Button</h1>
 
-							<div class="open"></div>
-
-							<div class="learn-more"></div>
+							</div>
 
 						</div>
 
-						<div class="editor-desc">
+						<div class="editDescPara">
 							
-							<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum ligula vulputate, maximus dui in, pulvinar quam. Pellentesque quis dapibus dolor. Pellentesque diam mauris, semper vel urna quis, efficitur vehicula ex. Sed posuere, felis quis ornare pulvinar, mi lectus mattis odio, vitae ultrices nisl erat non nibh.</p>
+							<p class="editPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus diam sed blandit cursus. Cras at risus nisl. Mauris odio lectus, tristique ac sem in, accumsan rutrum lorem. Nullam convallis hendrerit neque, dapibus dignissim purus mattis in. Sed id nulla suscipit, viverra tellus id, varius augue</p>
 
 						</div>
 
 					</div>
 
-					<div class="editor-blocks">
+					<div class="editorSection">
 						
-						<div class="editor-title">
+						<div class="editTitleSec">
 							
-							<h3 class="edit-title">Shadow Box</h3>
+							<div class="editTitle">
+								
+								<h1>Shadow Image</h1>
 
-							<div class="open"></div>
-
-							<div class="learn-more"></div>
+							</div>
 
 						</div>
 
-						<div class="editor-desc">
+						<div class="editDescPara">
 							
-							<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum ligula vulputate, maximus dui in, pulvinar quam. Pellentesque quis dapibus dolor. Pellentesque diam mauris, semper vel urna quis, efficitur vehicula ex. Sed posuere, felis quis ornare pulvinar, mi lectus mattis odio, vitae ultrices nisl erat non nibh.</p>
+							<p class="editPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus diam sed blandit cursus. Cras at risus nisl. Mauris odio lectus, tristique ac sem in, accumsan rutrum lorem. Nullam convallis hendrerit neque, dapibus dignissim purus mattis in. Sed id nulla suscipit, viverra tellus id, varius augue</p>
 
 						</div>
 
 					</div>
 
 				</div>
-
-			</div>
-
-			<!--Save publish button-->
-			
-			<div id="sp-button">
-				
-				<div id="save"></div>
-
-				<div id="publish"></div>
 
 			</div>
 

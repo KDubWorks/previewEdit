@@ -1,7 +1,3 @@
-::-webkit-scrollbar {
-	display:none;
-}
-
 html, body {
 	width:100%;
 	height:100%;
@@ -9,305 +5,188 @@ html, body {
 	padding:0px;
 	position:relative;
 	font-family:sans-serif;
+	overflow:hidden;
 }
 
-@media only screen and (min-width:769px) {
+/*This is the laptop size*/
+@media only screen and (max-width:1440px) and (min-width:769px) {
 
-	/*editor-text*/
-	#editor-ext {
+	/*Editor exteriro*/
+	#editorExt {
+		width:20em;
 		height:100vh;
-		width:28em;
-		background-color:#dcdcdc;
+		background-color:#f8f8f8;
 		position:absolute;
-		top:0px;
+		z-index:10000;
 		left:0px;
+		top:0px;
 		overflow:hidden;
 	}
 
-	#editor {
-		width:100%;
-		height:100%;
-		overflow-y:scroll;
-		overflow-x:hidden;
-
-	}
-
-	#in-edit {
-		width:28em;
-		height:auto;
-		box-shadow:inset 0 0 0 2px #a9a9a9;
-	}
-
-	.editor-blocks {
-		width:28em;
-		height:4.5em;
-		overflow:hidden;
-	}
-
-	.editor-title {
-		width:28em;
-		height:4.5em;
-		overflow:hidden;
-		position:relative;
-		box-shadow:inset 0 0 0 2px #a9a9a9;
-		background-color:#c8c8c8;
-	}
-
-	.editor-title:hover {
-		background-color:#a9a9a9;
-	}
-
-	.edit-title {
-		cursor:default;
-	}
-
-	.open {
-		width:1.5em;
-		height:1.5em;
-		background-color:#484848;
-		border-radius:50%;
-		position:absolute;
-		top:1.45em;
-		right:3em;
-	}
-
-	.learn-more {
-		width:1.5em;
-		height:1.5em;
-		background-color:#484848;
-		border-radius:50%;
-		position:absolute;
-		top:1.45em;
-		right:1em;
-	}
-
-	.edit-title {
-		text-transform:uppercase;
-		margin-top:0px;
-		position:absolute;
-		top:1.4em;
-		left:1em;
-		color:#484848;
-	}
-
-	.editor-desc {
-		width:28em;
-		height:auto;
-		overflow:hidden;
-		text-align:center;
-		background-color:#f3f3f3;
-	}
-
-	.desc {
-		width:70%;
-		margin:auto;
-		margin-top:1em;
-		margin-bottom:1em;
-	}
-
-	/*These are the editing tools*/
-	#background-image-edit, #icon-image-edit,
-	#title-edit, #date-edit, 
-	#button-edit, #shadow-box-edit {
-		width:28em;
+	/*editor tools*/
+	#editTools {
+		width:20em;
 		height:100vh;
+		overflow-x:hidden;
+		overflow-y:scroll;
 		position:absolute;
 		z-index:10000;
 		top:0px;
-		left:-28em;
-		background-color:#dcdcdc;
+		left:-20em;
+		background-color:#f0f0f0;
 	}
 
-	/*button save publish*/
-	#sp-button {
-		width:28em;
-		height:3.25em;
-		position:absolute;
-		left:0px;
-		bottom:0px;
-		box-shadow:inset 0 0 0 2px #a9a9a9;
-	}
-
-	#save {
-		height:3.25em;
-		width:14em;
-		background-color:#c8c8c8;
-		float:left;
-		overflow:hidden;
+	.editSec {
+		width:20em;
+		height:auto;
 		text-align:center;
-		box-shadow:inset 0 0 0 2px #a9a9a9;
-		float:left;
+		color:#303030;
+		overflow:hidden;
+		display:none;
 	}
 
-	#publish {
-		height:3.25em;
-		width:14em;
-		background-color:#c8c8c8;
-		float:left;
-		overflow:hidden;
+	.editTitleSecTool {
+		width:70%;
+		margin:1em auto;
+		padding:5px 0px;
+		border:5px solid #303030;
+	}
+
+	.secToolDesc {
+		width:70%;
+		margin:auto;
+		font-size:16px;
+	}
+
+	/*Background Image*/
+	#background-preview {
+		width:90%;
+		height:10em;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center center;
+		background-image:url("../img/hotel.jpg");
+		margin:auto;
+		margin-top:1em;
+	}
+
+	#background-count {
+		width:90%;
+		height:4em;
+		margin:auto;
+		margin-top:1em;
+	}
+
+	#background-selection {
+		width:90%;
+		height:30em;
+		margin:auto;
+		margin-top:1em;
+	}
+
+	#background-animation {
+		width:90%;
+		height:25em;
+		margin:auto;
+		margin-top:1em;
+		margin-bottom:4em;
+	}
+
+	/*Title Preview*/
+	#title-preview {
+		width:90%;
+		margin:auto;
+		margin-top:0.75em;
+		text-transform:uppercase;
+		font-size:26px;
 		text-align:center;
-		box-shadow:inset 0 0 0 2px #a9a9a9;
-		float:left;
 	}
 
-	#publish:hover, #save:hover {
-		background-color:#a9a9a9;
+	#title-preview:after {
+		display:block;
+		content:"";
+		height:2px;
+		width:90%;
+		margin:auto;
+		margin-top:5px;
+		background-color:#303030;
 	}
 
-}
-
-@media only screen and (max-width:768px) and (min-width:426px) and (orientation:portrait) {
-
-
-
-}
-
-@media only screen and (orientation:landscape) and (max-width:800px) {
-
-	/*Editor*/
-	#editor-ext {
-		width:100vw;
-		height:100vh;
-		overflow:hidden;
+	#title-input-edit {
+		width:70%;
+		margin:auto;
+		margin-top:0.75em;
+		font-size:16px;
+		outline:none;
+		padding-top:3px;
+		padding-bottom:3px;
 	}
 
+	#preview {
+		outline:none;
+		padding:5px 15px;
+		font-size:14px;
+		text-transform:uppercase;
+		background-color:transparent;
+		color:#303030;
+		margin-top:0.75em;
+		border:3px solid #303030;
+	}
+
+	/*This is the editor*/
 	#editor {
 		width:100%;
-		height:100%;
-		overflow-y:hidden;
-		overflow-x:scroll;
-	}
-
-	#in-edit {
-		width:120vw;
 		height:100vh;
-		box-shadow:inset 0 0 0 2px #a9a9a9;
+		overflow-x:hidden;
+		overflow-y:scroll;
 	}
 
-	.editor-blocks {
-		width:40vw;
-		height:50vh;
-		float:left;
-		background-color:#c8c8c8;
-		box-shadow:inset 0 0 0 2px #a9a9a9;
+	#editorScroll {
+		width:100%;
+		height:auto;
+		overflow:hidden;
+		box-shadow:inset 0 0 0 2px #e8e8e8;
 	}
 
-	/*These are the editing tools*/
-	#background-image-edit, #icon-image-edit,
-	#title-edit, #date-edit, 
-	#button-edit, #shadow-box-edit {
-		display:none;
+	/*Individual Edit Section*/
+	.editorSection {
+		width:100%;
+		height:3em;
+		overflow:hidden;
+	}
+
+	.editTitleSec {
+		width:100%;
+		height:3em;
+		overflow:hidden;
+		background-color:#F0F0F0;
+	}
+
+	.editTitleSec:hover {
+		background-color:#e8e8e8;
+	}
+
+	.editTitle {
+		width:100%;
+		height:3em;
+		overflow:hidden;
+		position:relative;
+		box-shadow:inset 0 0 0 2px #e8e8e8;
+	}
+
+	.editTitle > h1 {
+		font-size:15px;
+		margin-top:0px;
+		position:absolute;
+		left:1em;
+		top:1.05em;
+		color:#303030;
 	}
 
 }
 
 @media only screen and (max-width:425px) and (orientation:portrait) {
 
-	/*editor-text*/
-	#editor-ext {
-		width:90vw;
-		height:85vh;
-		overflow:hidden;
-		position:absolute;
-		z-index:1000;
-		left:5vw;
-		bottom:5vh;
-		background-color:#dcdcdc;
-	}
-
-	#editor {
-		width:100%;
-		height:100%;
-		overflow-x:hidden;
-		overflow-y:scroll;
-	}
-
-	#in-edit {
-		width:100%;
-		height:auto;
-		box-shadow:inset 0 0 0 2px #a9a9a9;
-	}
-
-	.editor-blocks {
-		width:100%;
-		height:4.5em;
-		overflow:hidden;
-	}
-
-	.editor-title {
-		width:100%;
-		height:4.5em;
-		overflow:hidden;
-		position:relative;
-		box-shadow:inset 0 0 0 2px #a9a9a9;
-		background-color:#c8c8c8;
-	}
-
-	.editor-title:hover {
-		background-color:#a9a9a9;
-	}
-
-	.edit-title {
-		cursor:default;
-		text-align:center;
-		text-transform:uppercase;
-		color:#484848;
-		margin-top:1.35em;
-	}	
-
-	.editor-desc {
-		width:28em;
-		height:auto;
-		overflow:hidden;
-		text-align:center;
-		background-color:#f3f3f3;
-	}
-
-	.desc {
-		width:70%;
-		margin:auto;
-		margin-top:1em;
-		margin-bottom:1em;
-	}
-
-	/*These are the editing tools*/
-	#background-image-edit, #icon-image-edit,
-	#title-edit, #date-edit, 
-	#button-edit, #shadow-box-edit {
-		display:none;
-	}
-
-	/*Save publish button*/
-	#sp-button {
-		width:100%;
-		height:3.25em;
-		position:absolute;
-		z-index:1000;
-		bottom:0px;
-		left:0px;
-		box-shadow:inset 0 0 0 2px #a9a9a9;
-	}
-
-	#save {
-		height:3.25em;
-		width:50%;
-		background-color:#c8c8c8;
-		float:left;
-		overflow:hidden;
-		text-align:center;
-		box-shadow:inset 0 0 0 2px #a9a9a9;
-		float:left;
-	}
-
-	#publish {
-		height:3.25em;
-		width:50%;
-		background-color:#c8c8c8;
-		float:left;
-		overflow:hidden;
-		text-align:center;
-		box-shadow:inset 0 0 0 2px #a9a9a9;
-		float:left;
-	}
-
+	
+	
 }
